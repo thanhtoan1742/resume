@@ -1,0 +1,113 @@
+$highlight-color: rgb(68, 68, 194);
+$highlight-color-secondary: rgb(19, 19, 163);
+
+* {
+    box-sizing: border-box;
+    font-family: Calibri, serif;
+}
+
+*:visited, *:link {
+    color: blue;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+
+.title-card {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: black;
+
+    img {
+        width: 120px;
+        height: 160px;
+    }
+
+    ul {
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        li {
+            margin-bottom: 2px;
+        }
+    }
+
+    #name {
+        font-size: 2em;
+        color: $highlight-color;
+    }
+}
+
+
+.container {
+    display: flex;
+}
+
+%column {
+    padding: 0em 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-column {
+    flex: 1;
+    @extend %column;
+    border-right: black 1px solid;
+
+    >.field {
+        text-align: end;
+    }
+}
+
+.right-column {
+    flex: 3;
+    @extend %column;
+    >.field {
+        text-align: start;
+    }
+}
+
+.field {
+    margin: 1em 0em;
+}
+
+.field-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $highlight-color;
+}
+
+.instution > ul {
+    >li {
+        font-style: italic;
+    }
+    >li:nth-child(1) {
+        font-style: normal;
+    }
+}
+
+.field-description {
+    .field-description-title {
+        font-weight: bold;
+        span {
+            font-style: italic;
+            font-weight: normal;
+        }
+    }
+
+    >a {
+        font-size: 0.75em;
+    }
+}
+
+.right-column ul {
+    list-style-type: disc;
+}

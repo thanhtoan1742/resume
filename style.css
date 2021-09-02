@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  font-family: Calibri, serif;
+}
+
+*:visited, *:link {
+  color: blue;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+.title-card {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+.title-card img {
+  width: 120px;
+  height: 160px;
+}
+.title-card ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.title-card ul li {
+  margin-bottom: 2px;
+}
+.title-card #name {
+  font-size: 2em;
+  color: #4444c2;
+}
+
+.container {
+  display: flex;
+}
+
+.right-column, .left-column {
+  padding: 0em 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.left-column {
+  flex: 1;
+  border-right: black 1px solid;
+}
+.left-column > .field {
+  text-align: end;
+}
+
+.right-column {
+  flex: 3;
+}
+.right-column > .field {
+  text-align: start;
+}
+
+.field {
+  margin: 1em 0em;
+}
+
+.field-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #4444c2;
+}
+
+.instution > ul > li {
+  font-style: italic;
+}
+.instution > ul > li:nth-child(1) {
+  font-style: normal;
+}
+
+.field-description .field-description-title {
+  font-weight: bold;
+}
+.field-description .field-description-title span {
+  font-style: italic;
+  font-weight: normal;
+}
+.field-description > a {
+  font-size: 0.75em;
+}
+
+.right-column ul {
+  list-style-type: disc;
+}
+
+/*# sourceMappingURL=style.css.map */
