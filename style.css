@@ -33,7 +33,10 @@ ul, ol {
 }
 .title-card #name {
   font-size: 2em;
-  color: #4444c2;
+  color: #181892;
+}
+.title-card a {
+  text-decoration: none;
 }
 
 .container {
@@ -68,7 +71,7 @@ ul, ol {
 .field-title {
   text-transform: uppercase;
   font-weight: bold;
-  color: #4444c2;
+  color: #181892;
 }
 
 .instution > ul > li {
