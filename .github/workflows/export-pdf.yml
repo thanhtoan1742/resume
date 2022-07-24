@@ -9,6 +9,7 @@ jobs:
       - run: apt --version
       - run: python --version
       - run: wkhtmltopdf --version
+      - run: actions/checkout@v3
       - run: python -m http.server -directory src &
       - run: wkhtmltopdf http://localhost:8000 build/resume.pdf
       - run: pkill python
