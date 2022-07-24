@@ -10,6 +10,8 @@ jobs:
       - run: python --version
       - run: wkhtmltopdf --version
       - uses: actions/checkout@v3
-      - run: python -m http.server -directory src &
+      - run: pwd
+      - run: ls
+      - run: python -m http.server --directory src --bind localhost 8000 &
       - run: wkhtmltopdf http://localhost:8000 build/resume.pdf
       - run: pkill python
