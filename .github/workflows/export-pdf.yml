@@ -1,0 +1,7 @@
+name: export-pdf
+on: [push]
+jobs:
+  export-pdf:
+    runs-on: ubuntu-22.04
+    steps:
+      - run: echo "hello world"
