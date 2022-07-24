@@ -1,0 +1,12 @@
+name: export-pdf
+on: [push]
+jobs:
+  export-pdf:
+    runs-on: ubuntu-22.04
+    steps:
+      - run: sudo apt update
+      - run: sudo apt install wkhtmltopdf
+      - uses: actions/checkout@v3
+      - run: python -m http.server --directory src --bind localhost 8000 &
+      - run: wkhtmltopdf http://localhost:8000 build/resume.pdf
+      - run: pkill python
