@@ -4,5 +4,11 @@ jobs:
   export-pdf:
     runs-on: ubuntu-22.04
     steps:
+      - run: sudo apt update
+      - run: sudo apt install wkhtmltopdf
+      - run: apt --version
       - run: python --version
       - run: wkhtmltopdf --version
+      - run: python -m http.server -directory src &
+      - run: wkhtmltopdf http://localhost:8000 build/resume.pdf
+      - run: pkill python
