@@ -1,2 +1,2 @@
 # Resume
-Build resume with HTML and CSS.
+A resume for me.
