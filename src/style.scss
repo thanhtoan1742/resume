@@ -5,11 +5,13 @@ $highlight-color: rgb(24, 24, 146);
     font-family: Calibri, serif;
 }
 
-*:visited, *:link {
+*:visited,
+*:link {
     color: blue;
 }
 
-ul, ol {
+ul,
+ol {
     list-style-type: none;
 }
 
@@ -50,68 +52,27 @@ ul, ol {
     }
 }
 
-
-.container {
-    display: flex;
-}
-
-%column {
-    padding: 0em 1em;
-    display: flex;
-    flex-direction: column;
-}
-
-.left-column {
-    flex: 1;
-    @extend %column;
-    border-right: black 1px solid;
-
-    >.field {
-        text-align: end;
-    }
-}
-
-.right-column {
-    flex: 3;
-    @extend %column;
-    >.field {
-        text-align: start;
-    }
-}
-
-.field {
+.section {
     margin: 1em 0em;
-}
 
-.field-title {
-    text-transform: uppercase;
-    font-weight: bold;
-    color: $highlight-color;
-}
-
-.instution > ul {
-    >li {
-        font-style: italic;
-    }
-    >li:nth-child(1) {
-        font-style: normal;
-    }
-}
-
-.field-description {
-    .field-description-title {
+    .section-title {
+        text-transform: uppercase;
         font-weight: bold;
-        span {
-            font-style: italic;
-            font-weight: normal;
+        color: $highlight-color;
+    }
+
+    .project {
+        .project-title {
+            font-weight: bold;
+
+            span {
+                font-style: italic;
+                font-weight: normal;
+            }
+        }
+
+        >a {
+            font-size: 0.75em;
         }
     }
-
-    >a {
-        font-size: 0.75em;
-    }
-}
-
-.right-column ul {
-    list-style-type: disc;
 }
