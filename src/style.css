@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   font-family: Calibri, serif;
@@ -13,8 +14,12 @@ ol {
   list-style-type: none;
 }
 
+body {
+  width: 40em;
+  margin: 3em;
+}
+
 .title-card {
-  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,6 +48,10 @@ ol {
 
 .section {
   margin: 1em 0em;
+}
+.section li::before {
+  content: "•";
+  color: rgb(24, 24, 146);
 }
 .section .section-title {
   text-transform: uppercase;
