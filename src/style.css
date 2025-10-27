@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 * {
   box-sizing: border-box;
   font-family: Calibri, serif;
@@ -7,6 +8,10 @@
 *:visited,
 *:link {
   color: blue;
+}
+
+ul {
+  padding-left: 1em;
 }
 
 ul,
@@ -25,23 +30,28 @@ body {
   align-items: center;
   color: black;
 }
+
 .title-card img {
   width: 120px;
   height: 160px;
 }
+
 .title-card ul {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 .title-card ul li {
   margin-bottom: 2px;
 }
+
 .title-card #name {
   font-size: 2em;
   color: rgb(24, 24, 146);
 }
+
 .title-card a {
   text-decoration: none;
 }
@@ -49,24 +59,27 @@ body {
 .section {
   margin: 1em 0em;
 }
+
 .section li::before {
   content: "•";
   color: rgb(24, 24, 146);
 }
+
 .section .section-title {
   text-transform: uppercase;
   font-weight: bold;
   color: rgb(24, 24, 146);
 }
+
 .section .project .project-title {
   font-weight: bold;
 }
+
 .section .project .project-title span {
   font-style: italic;
   font-weight: normal;
 }
-.section .project > a {
+
+.section .project>a {
   font-size: 0.75em;
 }
-
-/*# sourceMappingURL=style.css.map */
