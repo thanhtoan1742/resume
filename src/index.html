@@ -21,11 +21,10 @@
     <div class="section">
         <div class="section-title">About me</div>
         <div>
-            I am a graduate from Ho Chi Minh City University of Technology, major in computer science.
-            I having been programming for 7 years. I have experience working as an backend developer for an e-commerce
-            platform and cyber security software. I love to deep dive in to a subject and learn from
-            first principles to gain the most insights and understandings. I like to work on things
-            that can be reasoned logically.
+            Highly motivated Computer Science graduate with strong expertise in backend development, algorithm design,
+            and high-performance computing using C++, CUDA, Rust, Go, and Python. Proven track record in developing
+            specialized databases, AI/ML pipelines, and optimizing complex bioinformatic algorithms. Eager to leverage
+            technical depth to solve challenging problems.
         </div>
     </div>
 
@@ -38,25 +37,25 @@
     </div>
 
     <div class="section">
-        <div class="section-title">Achievements</div>
+        <div class="section-title">Academic Achievements</div>
         <ul>
             <li>3rd prize in VietNam national Informatics contest (2018).</li>
             <li>Participated in several national and regional ACM-ICPC contests (national 2019, regional 2020, 2021,
                 2022).</li>
             <li>Codeforces max-rating 1900 (candidate master).</li>
             <li>TOEIC L&R 960/990, TOEIC S&W 320/400.</li>
+            <li>Ho Chi Minh City University of Technology, 2019-2023, GPA: 8.01/10</li>
+
         </ul>
     </div>
 
     <div class="section">
         <div class="section-title">Experience</div>
         <ul>
-            <li>Participated in several competitive programming contests.</li>
-            <li>Experienced in working with teams in agile framework.</li>
-            <li>Experienced in SQL database (Postgres).</li>
-            <li>Experienced in working with containerization technologies (Docker, Kubernetes).</li>
-            <li>Experienced in using and designing REST and gRPC API.</li>
-            <li>Experienced in C++ (7 years), Python (4 years) and Go (1 year)</li>
+            <li>Programming Languages: C++, C, CUDA, Rust, Go, Python</li>
+            <li>HPC & Data Science: GPU Optimization, PyTorch, Numerical Methods, Statistical Analysis</li>
+            <li>Backend & Systems: REST, gRPC, SQL</li>
+            <li>DevOps & Tools: Docker (including CUDA support), Containerization, Git, CI/CD Streamlining</li>
         </ul>
     </div>
 
@@ -65,8 +64,104 @@
 
         <div class="project">
             <div class="project-title">
+                Bioturing - Rdstream
+                <span>(Sep-2025 - Now)</span>
+            </div>
+            <ul>
+                <li>
+                    Rdstream is a Rust-Python library that converts RDS files to HDF5/H5AD files.
+                </li>
+                <li>
+                    Single cells analysis is done by many scientist in R and stored as RDS file (R's storage file
+                    format). RDS can only easily read and work on by R. This library convert RDS to a more standard
+                    HDF5 format.
+                </li>
+                <li>
+                    Architected and optimized data pipeline by implementing a streaming conversion process (RDS to
+                    HDF5/H5AD) in
+                    Rust-Python, successfully controlling peak memory usage for large bioinformatic datasets.
+                </li>
+                <li>
+                    Convert Seurat project to Anndata H5AD file format.
+                </li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <div class="project-title">
+                Bioturing - Exen
+                <span>(June-2025 - Now)</span>
+            </div>
+            <ul>
+                <li>
+                    Exen is a specialized single-cell database in C++ and CUDA capable of processing queries on
+                    500M+ cells.
+                </li>
+                <li>
+                    The database is implemented and optimized in C++ and CUDA.
+                </li>
+                <li>
+                    Implemented many statistical methods such as differential expressed genes (T-Test and FDR
+                    correction), effect-size calculation (Cohen's D).
+                </li>
+                <li>
+                    Reduced numerical error in statistical calculations (mean/variance) crucial for accurate
+                    differential gene expression analysis. </li>
+                <li>
+                    Implemented common expression optimization to reduce time on marker genes queries.
+                </li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <div class="project-title">
+                Bioturing - HIFED
+                <span>(Dec-2024 - Feb-2025)</span>
+            </div>
+            <ul>
+                <li>
+                    HIFED is a train and inference pipeline for histology image features extraction and
+                    dowstream processing.
+                </li>
+                <li>
+                    The pipeline is optimized for maximum GPU utilization and reasonable memory usage.
+                    Implemented in pytorch.
+                </li>
+                <li>
+                    Implemented the first iteration which includes building data pipeline, testing models
+                    and optimize pre-processing, inference and post-processing steps.
+                </li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <div class="project-title">
+                Bioturing - New-Luin
+                <span>(May-2024 - Now)</span>
+            </div>
+            <ul>
+                <li>
+                    New-luin is a Python library implemented many algorithms used in analyzing
+                    single cell and spatial data (similar to scanpy, cuml, cugraph).
+                </li>
+                <li>
+                    Algorithms are implemented in C++ and CUDA for maximum performance.
+                </li>
+                <li>
+                    Implemented polygon matching algorithms, fixed radius near neighbors on 2D space,
+                    linkage clustering algorithm.
+                </li>
+                <li>
+                    Streamline build and deployment process for multiple CUDA versions and Python platform.
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="project">
+            <div class="project-title">
                 OPSWAT - Metadefender ICAP Server
-                <span>(Sept 2023 - Now)</span>
+                <span>(Sept 2023 - May-2024)</span>
             </div>
             <ul>
                 <li>
@@ -108,113 +203,6 @@
             </ul>
         </div>
 
-        <div class="project">
-            <div class="project-title">
-                Smart Grid
-                <span>(Nov 2022 - May 2023)</span>
-            </div>
-            <a href="https://github.com/thanhtoan1742/smart-grid">
-                github.com/thanhtoan1742/smart-grid
-            </a> <br>
-            <a href="https://github.com/thanhtoan1742/smart-grid-cpn-wsn-based-model">
-                github.com/thanhtoan1742/smart-grid-cpn-wsn-based-model
-            </a>
-            <ul>
-                <li>
-                    Designed mathematical model to represent smart grid components, connections and their behaviors.
-                </li>
-                <li>
-                    Designed algorithms that analyze state space generated from the model to solve many optimization
-                    problem related to load distribution.
-                </li>
-            </ul>
-        </div>
-
-        <div class="project">
-            <div class="project-title">
-                Coneveth
-                <span>(Mar 2022 - Apr 2022)</span>
-            </div>
-            <a href="https://github.com/thanhtoan1742/Coneveth">
-                github.com/thanhtoan1742/Coneveth
-            </a>
-            <ul>
-                <li>
-                    Developed a server and a mobile application for a simple IOT system.
-                </li>
-                <li>
-                    Server controls IOT devices and communicates to broker through MQTT protocol.
-                </li>
-                <li>
-                    Mobile application built using Unity engine, displays status of IOT system and sends command to
-                    broker and server to control IOT devices.
-                </li>
-            </ul>
-        </div>
-
-        <div class="project">
-            <div class="project-title">
-                NP Video Streamer
-                <span>(Oct 2021)</span>
-            </div>
-            <a href="https://github.com/thanhtoan1742/NPVideoStreamer">
-                github.com/thanhtoan1742/NPVideoStreamer
-            </a>
-            <ul>
-                <li>
-                    Developed a video streaming application that use standard RTSP and RTP protocol.
-                </li>
-                <li>
-                    Server side application handles incoming request for video, reads the from storage and stream the
-                    video over the internet.
-                </li>
-                <li>
-                    Client side application handle user's input, send request to server (RTSP) and displays the stream
-                    of video (RTP).
-                </li>
-            </ul>
-        </div>
-
-        <div class="project">
-            <div class="project-title">
-                Simplified Green House Model
-                <span>(Nov 2020 - Jan 2021)</span>
-            </div>
-            <a href="https://github.com/thanhtoan1742/SimplifiedGreenHouseModel">
-                github.com/thanhtoan1742/SimplifiedGreenHouseModel
-            </a>
-            <ul>
-                <li>
-                    Developed weather simulation in a greenhouse model proposed by Vanthoor (2011)
-                    that helps monitor and predict future weather conditions in a greenhouse.
-                </li>
-                <li>
-                    Developed algorithm that uses simulated information to predict
-                    future weather condition (through a combination of ODE solver and
-                    artificial intelligence).
-                </li>
-            </ul>
-        </div>
-
-        <div class="project">
-            <div class="project-title">
-                MIPS Assembler and Runner
-                <span>(Nov 2019 - Dec 2019)</span>
-            </div>
-            <a href="https://github.com/thanhtoan1742/MIPS-Runner">
-                github.com/thanhtoan1742/MIPS-Runner
-            </a>
-            <ul>
-                <li>
-                    Developed an assembler that translates MIPS assembly code.
-                </li>
-                <li>
-                    Developed an CLI-based application that runs programs written in
-                    MIPS.
-                </li>
-            </ul>
-        </div>
-    </div>
 </body>
 
 </html>
